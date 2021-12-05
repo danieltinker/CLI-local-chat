@@ -1,0 +1,34 @@
+<head>
+  <title>FlaskApp</title>
+  <script>
+    let server = "http://127.0.0.1:5000/";
+    function postdata(link) {
+      $.ajax({
+        url: link,
+        type: "POST",
+        data: {},
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- <button>Send an HTTP GET request to a page and get the result back</button>
+  <button type="button" id="switch" onclick="fuck(this)">switchPage</button> -->
+  <!--  <h1>Hello World!</h1>
+  <h3>{{ utc_dt }}</h3>
+  <h2>Demo JavaScript in Head</h2>
+  <p id="demo">A Paragraph</p>
+  <button type="button" onclick="myFunction()">Try it</button>
+  <form method="POST">
+    <input type="button" name="myBtn" value="switchPages" />
+  </form> -->
+
+  <h1>hey</h1>
+  <form action="/window" method="get">
+    <label for="roomname">room name:</label>
+    <input type="text" id="roomname-input" name="roomname" /><br /><br />
+    <label for="username">Username:</label>
+    <input type="text" id="username-input" name="username" /><br /><br />
+    <input type="submit" value="Submit" />
+  </form>
+</body>

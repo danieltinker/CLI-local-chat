@@ -1,0 +1,26 @@
+<div class="chat-container">
+  <header>Room {{roomname}} Username: {{username}}</header>
+  <div id="status"></div>
+  <div class="chatLog-card">
+      <div id="messages"></div>
+    <!-- <p *ngFor="let msg in log">{{timestamp}}, {{username}}: {{msg}}</p> -->
+</div>
+<textarea id="textarea" class="from-control" placeholder="enter text here..." ></textarea>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js" integrity="sha512-nYuHvSAhY5lFZ4ixSViOwsEKFvlxHMU2NHts1ILuJgOS6ptUmAGt/0i5czIgMOahKZ6JN84YFDA+mCdky7dD8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<script>
+    (function(){
+        var element = function(id){
+            return document.getElementById(id);
+        }
+
+        var status = element('status')
+        var messages = element('messages')
+        var textarea = element('textarea')
+    })();
+</script>
+
+  </div>
+</div>
